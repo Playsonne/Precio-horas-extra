@@ -16,9 +16,9 @@ function calcularPago() {
 
     document.getElementById("resultado").innerHTML = 
         `<div style='background: #28a745; color: white; padding: 10px; border-radius: 5px; font-size: 18px;'>
-            Pago por hora extra normal(Pₙ): <strong>€${Pn.toFixed(2)}</strong><br>
-            Pago por hora extra sábado(Pₛ): <strong>€${Ps.toFixed(2)}</strong><br>
-            Pago por hora extra nocturna(Pₙₒ): <strong>€${Pno.toFixed(2)}</strong>
+            Precio hora extra normal(Pₙ): <strong>${Pn.toFixed(2)} €</strong><br>
+            Precio hora extra sábado(Pₛ): <strong>${Ps.toFixed(2)} €</strong><br>
+            Precio hora extra nocturna(Pₙₒ): <strong>${Pno.toFixed(2)} €</strong>
          </div>
          <p style='margin-top: 10px; font-size: 14px; font-style: italic; color: #555;'>by Playsonne</p>`;
 }
