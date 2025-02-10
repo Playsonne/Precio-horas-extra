@@ -68,20 +68,26 @@
         <h2>Calculadora de Pago de Horas Extra</h2>
         <div class="formula">
             Fórmula: Pₙ = (S - Hₛ - 2Hₙₒ) / (Hₙ + Hₛ + Hₙₒ) <br>
-            Pₛ = Pₙ + 1, Pₙₒ = Pₙ + 2
+            Pₛ = Pₙ + incremento para Pₛ, Pₙₒ = Pₙ + incremento para Pₙₒ
         </div>
 
-        <label for="horasNormales">Horas Extra Normales(Hₙ):</label>
+        <label for="horasNormales">Horas Extra Normales (Hₙ):</label>
         <input type="number" id="horasNormales" placeholder="Introduce horas normales" value="0" onfocus="if(this.value=='0') this.value=''" onblur="if(this.value=='') this.value='0'">
 
-        <label for="horasSabado">Horas Extra Sábado(Hₛ):</label>
+        <label for="horasSabado">Horas Extra Sábado (Hₛ):</label>
         <input type="number" id="horasSabado" placeholder="Introduce horas sábado" value="0" onfocus="if(this.value=='0') this.value=''" onblur="if(this.value=='') this.value='0'">
 
-        <label for="horasNocturnas">Horas Extra Nocturnas(Hₙₒ):</label>
+        <label for="horasNocturnas">Horas Extra Nocturnas (Hₙₒ):</label>
         <input type="number" id="horasNocturnas" placeholder="Introduce horas nocturnas" value="0" onfocus="if(this.value=='0') this.value=''" onblur="if(this.value=='') this.value='0'">
 
-        <label for="salarioTotal">Salario Total(S) (€):</label>
+        <label for="salarioTotal">Salario Total (S) (€):</label>
         <input type="number" id="salarioTotal" placeholder="Introduce el salario total">
+
+        <label for="incrementoPs">Incremento Hora Sábado (Pₛ):</label>
+        <input type="number" id="incrementoPs" placeholder="Introduce incremento para Pₛ" value="1">
+
+        <label for="incrementoPno">Incremento Hora Nocturna (Pₙₒ):</label>
+        <input type="number" id="incrementoPno" placeholder="Introduce incremento para Pₙₒ" value="2">
 
         <button onclick="calcularPago()">Calcular</button>
 
